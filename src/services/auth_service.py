@@ -76,8 +76,10 @@ class AuthService:
         
         except Exception as e:
             # Comprehensive error logging
-            print(f"Signup error: {str(e)}")
+            # print(f"Signup error: {str(e)}")
+            print("Signup error:", e.args)              # Often contains useful info in args[0]
             raise
+        
 
     def sign_in(self, email, password):
         """
