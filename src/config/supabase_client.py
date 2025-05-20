@@ -1,6 +1,7 @@
 import streamlit as st
 from supabase import create_client, Client
 
+
 def get_supabase_client() -> Client:
     """
     Creates and returns a Supabase client instance using Streamlit secrets
